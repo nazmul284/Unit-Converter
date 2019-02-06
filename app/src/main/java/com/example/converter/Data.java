@@ -95,6 +95,8 @@ public class Data extends AppCompatActivity implements AdapterView.OnItemSelecte
                 tb.setText("TB: "+ new Double(tb_value).toString());
                 tb.setTextColor(this.getResources().getColor(R.color.temp2_bg));
 
+                seclct_data.setSelection(0);
+
 
             }else if (item.equals("Byte")){
 
@@ -126,6 +128,8 @@ public class Data extends AppCompatActivity implements AdapterView.OnItemSelecte
                 tb.setText("TB: "+ new Double(tb_value).toString());
                 tb.setTextColor(this.getResources().getColor(R.color.temp2_bg));
 
+                seclct_data.setSelection(0);
+
             }else if (item.equals("KB")){
 
 
@@ -155,6 +159,8 @@ public class Data extends AppCompatActivity implements AdapterView.OnItemSelecte
                 double tb_value = (gb_value/1024);
                 tb.setText("TB: "+ new Double(tb_value).toString());
                 tb.setTextColor(this.getResources().getColor(R.color.temp2_bg));
+
+                seclct_data.setSelection(0);
 
             }else if (item.equals("MB")){
 
@@ -186,6 +192,8 @@ public class Data extends AppCompatActivity implements AdapterView.OnItemSelecte
                 tb.setText("TB: "+ new Double(tb_value).toString());
                 tb.setTextColor(this.getResources().getColor(R.color.temp2_bg));
 
+                seclct_data.setSelection(0);
+
             }else if (item.equals("GB")){
 
 
@@ -216,6 +224,8 @@ public class Data extends AppCompatActivity implements AdapterView.OnItemSelecte
                 tb.setText("TB: "+ new Double(tb_value).toString());
                 tb.setTextColor(this.getResources().getColor(R.color.temp2_bg));
 
+                seclct_data.setSelection(0);
+
             }else if (item.equals("TB")){
 
 
@@ -245,6 +255,8 @@ public class Data extends AppCompatActivity implements AdapterView.OnItemSelecte
                 double bit_value = byte_value*8;
                 bit.setText("Bit: "+ new Double(bit_value).toString());
                 bit.setTextColor(this.getResources().getColor(R.color.temp2_bg));
+
+                seclct_data.setSelection(0);
 
             }
 

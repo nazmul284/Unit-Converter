@@ -89,6 +89,8 @@ public class Length extends AppCompatActivity implements AdapterView.OnItemSelec
                 feet.setText("Feet: " + new Double(fet).toString());
                 feet.setTextColor(getResources().getColor(R.color.temp2_bg));
 
+                seclct_length.setSelection(0);
+
 
             }else if (item.equals("Centimeter")){
 
@@ -121,6 +123,8 @@ public class Length extends AppCompatActivity implements AdapterView.OnItemSelec
                 feet.setText("Feet: " + new Double(fet).toString());
                 feet.setTextColor(getResources().getColor(R.color.temp2_bg));
 
+                seclct_length.setSelection(0);
+
             }else if (item.equals("Kilometer")){
 
 
@@ -151,6 +155,8 @@ public class Length extends AppCompatActivity implements AdapterView.OnItemSelec
                 double fet = in/12;
                 feet.setText("Feet: " + new Double(fet).toString());
                 feet.setTextColor(getResources().getColor(R.color.temp2_bg));
+
+                seclct_length.setSelection(0);
 
             }else if (item.equals("Miles")){
 
@@ -183,6 +189,8 @@ public class Length extends AppCompatActivity implements AdapterView.OnItemSelec
                 feet.setText("Feet: " + new Double(fet).toString());
                 feet.setTextColor(getResources().getColor(R.color.temp2_bg));
 
+                seclct_length.setSelection(0);
+
             }else if (item.equals("Inche")){
 
 
@@ -214,6 +222,8 @@ public class Length extends AppCompatActivity implements AdapterView.OnItemSelec
                 feet.setText("Feet: " + new Double(fet).toString());
                 feet.setTextColor(getResources().getColor(R.color.temp2_bg));
 
+                seclct_length.setSelection(0);
+
             }else if (item.equals("Feet")){
 
 
@@ -244,6 +254,8 @@ public class Length extends AppCompatActivity implements AdapterView.OnItemSelec
                 double mil = km*0.62137;
                 mile.setText("Mile: " + new Double(mil).toString());
                 mile.setTextColor(getResources().getColor(R.color.temp2_bg));
+
+                seclct_length.setSelection(0);
 
             }
 

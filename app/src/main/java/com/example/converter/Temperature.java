@@ -88,6 +88,8 @@ public class Temperature extends AppCompatActivity implements AdapterView.OnItem
                 kelvin.setText("Kelvin: "+ new Double(kel).toString());
                 kelvin.setTextColor(this.getResources().getColor(R.color.temp2_bg));
 
+                select_temp.setSelection(0);
+
             }else if (item.equals("F")){
 
                 Double far = Double.parseDouble((input_temperatur.getText().toString()));
@@ -106,6 +108,8 @@ public class Temperature extends AppCompatActivity implements AdapterView.OnItem
                 double kel = (celc+273.15);
                 kelvin.setText("Kelvin: "+ new Double(kel).toString());
                 kelvin.setTextColor(this.getResources().getColor(R.color.temp2_bg));
+
+                select_temp.setSelection(0);
 
 
             }else if(item.equals("K")){
@@ -126,6 +130,8 @@ public class Temperature extends AppCompatActivity implements AdapterView.OnItem
                 kelvin.setText("Kelvin: "+ new Double(kel).toString());
 
                 kelvin.setTextColor(this.getResources().getColor(R.color.temp_bg));
+
+                select_temp.setSelection(0);
 
             }
 
