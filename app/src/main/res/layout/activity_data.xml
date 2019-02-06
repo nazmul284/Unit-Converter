@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#F2F1F0"
+    android:orientation="vertical"
+    tools:context=".Temperature">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/input_data"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter your value"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:padding="10dp"
+            />
+
+        <Spinner
+            android:id="@+id/select_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:clickable="true"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+
+
+        <TextView
+            android:id="@+id/bit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text=""
+            android:background="#BEBBBB"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/byte_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text=""
+            android:background="#BEBBBB"
+            android:padding="5dp"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/kb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text=""
+            android:padding="5dp"
+            android:background="#BEBBBB"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/mb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text=""
+            android:padding="5dp"
+            android:background="#BEBBBB"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/gb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text=""
+            android:padding="5dp"
+            android:background="#BEBBBB"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/tb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text=""
+            android:padding="5dp"
+            android:background="#BEBBBB"
+            android:layout_marginTop="4dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
