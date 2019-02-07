@@ -3,8 +3,13 @@ package com.example.converter;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+import android.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
     Button data, length, temperatur;
@@ -47,4 +52,33 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-}
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+
+        getMenuInflater().inflate(R.menu.option_menu, menu);
+
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        int id= item.getItemId();
+
+        if (id==R.id.help){
+            Toast.makeText(getApplicationContext(),"Help Selected",Toast.LENGTH_LONG).show();
+            return true;
+        }else if (id==R.id.about){
+
+
+            Toast.makeText(getApplicationContext(),"About Selected",Toast.LENGTH_LONG).show();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+       }
+

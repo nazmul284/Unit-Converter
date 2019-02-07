@@ -90,6 +90,7 @@ public class Temperature extends AppCompatActivity implements AdapterView.OnItem
 
                 select_temp.setSelection(0);
 
+
             }else if (item.equals("F")){
 
                 Double far = Double.parseDouble((input_temperatur.getText().toString()));
@@ -134,6 +135,8 @@ public class Temperature extends AppCompatActivity implements AdapterView.OnItem
                 select_temp.setSelection(0);
 
             }
+
+
 
         }catch (Exception e){
             e.printStackTrace();
