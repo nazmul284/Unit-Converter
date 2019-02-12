@@ -18,11 +18,9 @@ import java.util.List;
 public class Temperature extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     EditText input_temperatur;
-    Button convert;
     Spinner select_temp;
     TextView celcius,fahrenheit,kelvin;
     List<String> items;
-    Double value;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -5,42 +5,64 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="5dp"
-    android:background="#F2F1F0"
+    android:background="@color/colorBack"
+    android:gravity="center"
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/data"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:text="Data"
-            android:layout_marginTop="4dp"
+            android:background="@drawable/button_back"
+            android:textColor="@color/colorText"
+            android:textStyle="bold"
             android:textSize="25sp"
             android:textAllCaps="false"
-            />
-
+            android:layout_marginRight="2dp"/>
         <Button
             android:id="@+id/length"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:text="Length"
+            android:background="@drawable/button_back"
+            android:textColor="@color/colorText"
+            android:textStyle="bold"
             android:textSize="25sp"
-            android:textAllCaps="false"
-            />
+            android:textAllCaps="false"/>
 
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp">
         <Button
             android:id="@+id/temperatur"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:text="Temperatur"
+            android:background="@drawable/button_back"
+            android:textColor="@color/colorText"
+            android:textStyle="bold"
             android:textSize="25sp"
             android:textAllCaps="false"
-            />
+            android:layout_marginRight="2dp"/>
+        <Button
+            android:id="@+id/power"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="Power"
+            android:background="@drawable/button_back"
+            android:textColor="@color/colorText"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textAllCaps="false"/>
+
 
     </LinearLayout>
 

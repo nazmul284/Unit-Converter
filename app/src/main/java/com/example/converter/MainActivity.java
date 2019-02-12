@@ -12,7 +12,7 @@ import android.widget.Toast;
 import android.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
-    Button data, length, temperatur;
+    Button data, length, temperatur,power;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         data = (Button) findViewById(R.id.data);
         length = (Button) findViewById(R.id.length);
         temperatur = (Button) findViewById(R.id.temperatur);
+        power = (Button) findViewById(R.id.power);
 
         data.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +48,14 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent tempIntent = new Intent(getApplicationContext(),Temperature.class);
                 startActivity(tempIntent);
+            }
+        });
+
+        power.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent powerIntent = new Intent(getApplicationContext(), Power.class);
+                startActivity(powerIntent);
             }
         });
 

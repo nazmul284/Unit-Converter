@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#6C5F5B"
+    android:orientation="vertical"
+    tools:context=".Temperature">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/input_power"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter your value"
+            android:textSize="16sp"
+            android:inputType="number"
+            android:background="#D5D6D2"
+            android:padding="10dp"
+            />
+
+        <Spinner
+            android:id="@+id/select_power"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#D5D6D2"
+            android:clickable="true"
+            android:layout_marginLeft="3dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="#CDAB81"/>
+
+
+
+        <TextView
+            android:id="@+id/kilowatt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text=""
+            android:padding="5dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#CDAB81"/>
+
+        <TextView
+            android:id="@+id/watt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text=""
+            android:padding="5dp"
+            android:layout_marginTop="4dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#CDAB81"/>
+
+        <TextView
+            android:id="@+id/hp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text=""
+            android:padding="5dp"
+            android:layout_marginTop="4dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#CDAB81"/>
+
+    </LinearLayout>
+
+</LinearLayout>
