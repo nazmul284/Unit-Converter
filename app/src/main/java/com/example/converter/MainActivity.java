@@ -67,14 +67,10 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
 
         int id= item.getItemId();
+        if (id==R.id.about){
 
-        if (id==R.id.help){
-            Toast.makeText(getApplicationContext(),"Help Selected",Toast.LENGTH_LONG).show();
-            return true;
-        }else if (id==R.id.about){
-
-
-            Toast.makeText(getApplicationContext(),"About Selected",Toast.LENGTH_LONG).show();
+            Intent aboutIntent= new Intent(getApplicationContext(), About.class);
+            startActivity(aboutIntent);
             return true;
         }
         return super.onOptionsItemSelected(item);
