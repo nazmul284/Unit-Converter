@@ -11,4 +11,5 @@
     <color name="colorBack">#241333</color>
     <color name="colorTitle">#362742</color>
     <color name="colorsubTitle">#A9AAAD</color>
+    <color name="colorTextViewDiv">#A9AAAD</color>
 </resources>

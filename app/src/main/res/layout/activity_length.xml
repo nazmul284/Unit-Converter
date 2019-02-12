@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    android:background="#6C5F5B"
+    android:background="@color/colorBack"
     android:orientation="vertical"
     tools:context=".Temperature">
 
@@ -23,7 +23,7 @@
             android:hint="Enter your value"
             android:textSize="16sp"
             android:inputType="number"
-            android:background="#D5D6D2"
+            android:background="@drawable/edittext_back"
             android:padding="10dp"
             />
 
@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:layout_marginLeft="3dp"
-            android:background="#D5D6D2"
+            android:background="@drawable/edittext_back"
             android:clickable="true"
             />
 
@@ -47,8 +47,8 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="6dp"
-            android:background="#A1D6E2"/>
+            android:layout_height="2dp"
+            android:background="@color/colorTextViewDiv"/>
 
 
 
@@ -63,7 +63,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:background="#A1D6E2"/>
+            android:background="@color/colorTextViewDiv"/>
 
         <TextView
             android:id="@+id/inche"
@@ -76,7 +76,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:background="#A1D6E2"/>
+            android:background="@color/colorTextViewDiv"/>
 
         <TextView
             android:id="@+id/meter"
@@ -89,7 +89,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:background="#A1D6E2"/>
+            android:background="@color/colorTextViewDiv"/>
 
         <TextView
             android:id="@+id/centimeter"
@@ -102,7 +102,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:background="#A1D6E2"/>
+            android:background="@color/colorTextViewDiv"/>
 
         <TextView
             android:id="@+id/kilometer"
@@ -115,7 +115,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:background="#A1D6E2"/>
+            android:background="@color/colorTextViewDiv"/>
 
         <TextView
             android:id="@+id/mile"
@@ -128,7 +128,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:background="#A1D6E2"/>
+            android:background="@color/colorTextViewDiv"/>
 
     </LinearLayout>
 
